@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Giphurs';
+    src: url('../fonts/Giphurs-Regular.ttf') format('truetype');
+}
+
+body
+{
+    font-family: 'Giphurs', sans-serif;
+    letter-spacing: 0.02em;
+    background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
+}
+
+.navitems
+{
+    @apply h-10 px-4 hover:bg-zinc-800 rounded-lg flex items-center gap-2
+}
+
+.sessao-site
+{
+    @apply block text-center bg-zinc-800 text-white pb-24 px-10 xl:px-96
+}
+
+.rodape
+{
+    @apply flex items-center justify-between bg-zinc-900 text-white py-5 px-10 xl:px-96
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+p{
+    @apply text-lg
+}
+
+
+.card-post
+{
+    border: 2px solid rgb(24 24 27 / var(--tw-bg-opacity, 1));
+    border-radius: 10px;
+    @apply text-left p-6 hover:bg-zinc-900 rounded-lg
+}
+
+
+
